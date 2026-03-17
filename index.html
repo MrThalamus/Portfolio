@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ML Engineer & Researcher</title>
+    <meta name="description"
+        content="Personal portfolio of a Computer Science student specializing in Software Development, AI Research, Photography, and Leadership.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>Md. Saikot Hossain</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="btn btn-outline" download>Resume</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text" data-reveal="left">
+                    <h2 class="hero-greeting">Hello, I'm a</h2>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Computer Science Student</span><br>
+                        & Researcher
+                    </h1>
+                    <p class="hero-tagline">
+                        Building practical, research-driven solutions. Bridging the gap between complex system design,
+                        artificial intelligence, and creative vision.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#research" class="btn btn-secondary">View Research</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper" data-reveal="right">
+                    <div class="image-mask">
+                        <!-- User's Real Profile Image -->
+                        <img src="img/pf.jpg" alt="Profile" class="profile-img">
+                    </div>
+                    <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
+                    <div class="floating-badge badge-2"><i class="fas fa-camera"></i></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text" data-reveal="up" data-delay="100">
+                        <p>I am a passionate Computer Science student and AI automation who loves solving complex
+                            problems with elegant code. My background spans ML Project building, AI research, and
+                            systems engineering.</p>
+                        <p>Beyond the terminal, I am a creative thinker and photographer, finding patterns in both code
+                            and nature. I actively volunteer to foster tech communities and gain experties in communication & networking.
+                        </p>
+
+                        <div class="interests-tags">
+                            <span class="tag">ML Engineering</span>
+                            <span class="tag">AI Research</span>
+                            <span class="tag">System Design</span>
+                            <span class="tag">.NET Ecosystem</span>
+                            <span class="tag">Photography</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-showcase" data-reveal="up" data-delay="200">
+                        <div class="highlight-card">
+                            <i class="fas fa-laptop-code highlight-icon"></i>
+                            <h3>Problem Solver</h3>
+                            <p>Architecting scalable solutions to real-world problems.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-brain highlight-icon"></i>
+                            <h3>Researcher</h3>
+                            <p>Exploring the frontiers of AI and efficient algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section bg-alt">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Technical Arsenal</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid" data-reveal="up" data-delay="100">
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="tag-tech">Python</span>
+                            <span class="tag-tech">C#</span>
+                            <span class="tag-tech">JavaScript</span>
+                            <span class="tag-tech">C++</span>
+                            <span class="tag-tech">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="tag-tech">.NET Framework</span>
+                           
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-robot"></i> AI / ML Tools</h3>
+                        <div class="skill-tags">
+                            <span class="tag-tech">PyTorch</span>
+                            <span class="tag-tech">NumPy</span>
+                            <span class="tag-tech">Pandas</span>
+                            <span class="tag-tech">Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-tools"></i> Developer Tools</h3>
+                        <div class="skill-tags">
+                            <span class="tag-tech">Git / GitHub</span>
+                            <span class="tag-tech">Kaggle</span>
+                            <span class="tag-tech">Google Colab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Selected Works</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Featured Project 1: Abroad Higher Study Solution -->
+                    <article class="project-card featured" data-reveal="up">
+                        <div class="project-image">
+                            <!-- YouTube Thumbnail for the first video using hqdefault instead of maxresdefault to prevent 404 image errors -->
+                            <img src="https://img.youtube.com/vi/AZMYS9K_QrM/hqdefault.jpg"
+                                alt="Abroad Higher Study Solution">
+                            <div class="project-overlay">
+                                <button class="icon-link video-trigger" data-video-id="AZMYS9K_QrM"
+                                    aria-label="Play video"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">C#</span>
+                                <span class="badge">.NET</span>
+                                <span class="badge">Desktop App</span>
+                            </div>
+                            <h3 class="project-title">Abroad Higher Study Solution</h3>
+                            <p class="project-desc">A comprehensive platform designed to assist students with their
+                                higher education journey abroad, streamlining the application and decision-making
+                                process.</p>
+                        </div>
+                    </article>
+
+                    <!-- Featured Project 2: OpenGL Dhaka City -->
+                    <article class="project-card featured" data-reveal="up" data-delay="100">
+                        <div class="project-image">
+                            <!-- YouTube Thumbnail for the second video -->
+                            <img src="https://img.youtube.com/vi/RPxZ-WXIAAU/maxresdefault.jpg" alt="Dhaka City OpenGL">
+                            <div class="project-overlay">
+                                <button class="icon-link video-trigger" data-video-id="RPxZ-WXIAAU"
+                                    aria-label="Play video"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">C++</span>
+                                <span class="badge">OpenGL</span>
+                                <span class="badge">GLUT</span>
+                                <span class="badge">Computer Graphics</span>
+                            </div>
+                            <h3 class="project-title">Hatirjheel Scenario of Dhaka City</h3>
+                            <p class="project-desc">A 3D computer graphics simulation using OpenGL and GLUT
+                                demonstrating four unique, interactive visual scenarios mapping dynamic elements of
+                                Dhaka city.</p>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Work Section -->
+        <section id="research" class="research section bg-alt">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Research Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item -->
+                    <div class="timeline-item" data-reveal="left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Optimizing LLM Inference on Edge Devices</h3>
+                                <span class="status-badge status-ongoing">Ongoing</span>
+                            </div>
+                            <p class="timeline-meta">Undergraduate Research Assistant • 2023 - Present</p>
+                            <p class="timeline-desc">Investigating quantization and pruning techniques to run large
+                                language models efficiently on low-power devices. Achieved a 40% reduction in memory
+                                footprint without significant accuracy loss.</p>
+                            <div class="timeline-tools">
+                                <span>PyTorch</span> <span>CUDA</span> <span>HuggingFace</span>
+                            </div>
+                            <a href="#" class="link-with-icon">View Abstract <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item -->
+                    <div class="timeline-item" data-reveal="right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Graph Neural Networks for Traffic Prediction</h3>
+                                <span class="status-badge status-published">Published</span>
+                            </div>
+                            <p class="timeline-meta">First Author • IEEE Conference 2023</p>
+                            <p class="timeline-desc">Developed a spatio-temporal GNN model to predict urban traffic flow
+                                using real-time sensor data. Model outperformed baseline by 15% in MSE.</p>
+                            <div class="timeline-tools">
+                                <span>Python</span> <span>DGL</span> <span>Pandas</span>
+                            </div>
+                            <a href="#" class="link-with-icon">Read Paper <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering Section -->
+        <section id="volunteering" class="volunteering section">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Volunteering</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal="up">
+                        <div class="project-image">
+                            <!-- Image for AIUB 23rd Convo -->
+                            <img src="img/CONVO.JPG" alt="AIUB 23rd Convocation">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AIUB 23rd Convocation</h3>
+                            <p class="project-desc">On 13th December 20205, I participated as a dedicated volunteer
+                                assisting in guest food distribution and ensuring smooth operations during the 23rd
+                                Convocation ceremony at AIUB.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="100">
+                        <div class="project-image">
+                            <!-- Image for USAF Blood Donation -->
+                            <img src="img/USAF.jpg" alt="USAF Blood Donation Campaign">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">USAF Blood Donation Campaign</h3>
+                            <p class="project-desc">Actively volunteered for the blood donation campaign on 24th
+                                October, 2024 organized by USAF, helping to manage donors, spread awareness, and
+                                facilitate community health initiatives.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="200">
+                        <div class="project-image">
+                            <!-- Image for Dark Room III -->
+                            <img src="img/Dark Room.jpg" alt="Dark Room III Exhibition">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">"Tale of The Dark Room III" Photography Exhibition</h3>
+                            <p class="project-desc">Contributed to the successful execution of the Dark Room III
+                                photography exhibition held on 26-27 January, 2024 presented by AIUBPC, assisting in
+                                gallery setup and public relations.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Portfolio Section -->
+        <section id="photography" class="photography section bg-alt">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Through the Lens</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">A collection of my creative work in photography.</p>
+                </div>
+
+                <div class="masonry-gallery" data-reveal="up" data-delay="100">
+                    <div class="gallery-item">
+                        <img src="img/Photographs/Md. Saikot Hossain_FOGGY MORNING_MobilePhotography.jpg" alt="Foggy Morning Photo">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Foggy Morning Commute</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/AIUB_SAIKOT_1.jpg" alt="AIUB Event Photo">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">AIUB Official Event</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/MD. Saikot Hossain_01896229708_Single Photo_2_AIUB.jpg" alt="Portrait">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Campus Portrait</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/MD. Saikot Hossain_01896229708_Single Photo_3_AIUB.jpg" alt="Portrait">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Student Life</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/MD. Saikot Hossain_01896229708_Single Photo_4_AIUB.jpg" alt="Portrait">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Professional Portrait</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/MD. Saikot Hossain_BD_AIUB_Mobile_01896229708_18.jpeg" alt="Event Photo">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Campus Festivities</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20231222_090159.jpg" alt="Nature">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Serene Landscape</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20241003_132927 (2).jpg" alt="Street Photography">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Urban Exploration</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20241114_170610.jpg" alt="Street Photography">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">City Streets</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250315_172140.jpg" alt="Nature">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Nature's Detail</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250503_173127.jpg" alt="Street Photography">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Afternoon Stroll</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250710_115718.jpg" alt="Nature">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Green Canopy</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250710_154606 (2).jpg" alt="Street Photography">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Architectural Lines</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250711_142110(1).jpg" alt="Portrait">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Candid Moment</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20250711_175349.jpg" alt="Street Photography">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Evening Shadows</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Photographs/20260129_171806.jpg" alt="Events">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-caption">Gatherings</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Milestones & Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal="up">
+                        <div class="project-image">
+                            <img src="img/Achievement/show the creativity.jpg" alt="Show the Creativity">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Show the Creativity Olympiad</h3>
+                            <p class="project-desc">Secured 3rd position in the "Show the Creativity Olympiad".</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="100">
+                        <div class="project-image">
+                            <img src="img/Achievement/Phy 1.png" alt="Physics Poster Presentation">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Physics Poster Presentation</h3>
+                            <p class="project-desc">Top in section and selected to present in the central competition in 2023 at AIUB.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="200">
+                        <div class="project-image">
+                            <img src="img/Achievement/aiubpc phototour.jpg" alt="AIUBPC PhotoTour 2025">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">1st Place, AIUBPC PhotoTour2025</h3>
+                            <p class="project-desc">Secured both 1st and 2nd place in the intra-club photography contest.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-alt">
+            <div class="container">
+                <div class="section-header text-center" data-reveal="up">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Interested in collaborating or just want to say hi? I'd love to hear
+                        from you.</p>
+                </div>
+
+                <div class="contact-wrapper" data-reveal="up" data-delay="100">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for research collaborations, AI/ML project, or
+                            photography gigs.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>saikot.works@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bashundhara R/A, Dhaka</span> 
+                            </div> 
+                        </div>
+
+                        <div class="social-links-grid">
+                            <a href="https://github.com/MrThalamus" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/md-saikot-hossain-b66237256/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.researchgate.net/profile/Md-Saikot-Hossain?ev=hdr_xprf" class="social-btn" aria-label="ResearchGate"><i
+                                    class="fas fa-graduation-cap"></i></a>
+                            <a href="https://codeforces.com/profile/MrThalamus" class="social-btn" aria-label="Codeforces"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="currentColor"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5H1.5C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-7.5c0-.828.672-1.5 1.5-1.5h3z"/></svg></a>
+                            <a href="https://www.instagram.com/floating_window_242?igsh=enEyZDl5OGN4ZWxm" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/saikot_242" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div> 
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required class="form-control" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Project Inquiry...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required class="form-control"
+                                placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo"><span>MrThalamus</span></div>
+            <p class="footer-text">Designed & Built with passion &copy; <span id="year"></span></p>
+            <a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-video">&times;</span>
+        <div class="video-container">
+            <iframe id="youtube-player" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

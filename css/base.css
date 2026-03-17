@@ -1,0 +1,213 @@
+/* Base Styles & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none; /* Hide default cursor for custom cursor */
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Layout Utilities */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: var(--space-xl) 0;
+    position: relative;
+    z-index: 10;
+}
+
+.bg-alt {
+    background-color: var(--bg-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
+}
+
+/* Custom Cursor */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-blue);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.2s, height 0.2s;
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--accent-blue);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.1s ease-out, width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.cursor-hover .cursor-dot {
+    width: 0;
+    height: 0;
+}
+
+.cursor-hover .cursor-outline {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 243, 255, 0.1);
+    border-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+/* Global Background Effects */
+.bg-effects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.gradient-sphere {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    animation: float 20s infinite ease-in-out;
+}
+
+.sphere-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-blue);
+    top: -100px;
+    right: -100px;
+}
+
+.sphere-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-purple);
+    bottom: -200px;
+    left: -200px;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-30px, 50px); }
+}
+
+/* Scroll Reveals classes */
+[data-reveal] {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-slow), transform var(--transition-slow), visibility var(--transition-slow);
+}
+
+[data-reveal="up"] { transform: translateY(50px); }
+[data-reveal="left"] { transform: translateX(-50px); }
+[data-reveal="right"] { transform: translateX(50px); }
+
+[data-reveal].revealed {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+}
+
+/* Common Section Header */
+.section-header {
+    margin-bottom: var(--space-lg);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: var(--space-xs);
+}
+
+.section-line {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+.text-center .section-line {
+    margin: 0 auto;
+}
