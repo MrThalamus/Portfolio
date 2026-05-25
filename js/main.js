@@ -188,24 +188,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 7. Video Modal Logic
     const videoModal = document.getElementById('video-modal');
-    const youtubePlayer = document.getElementById('youtube-player');
+    const htmlPlayer = document.getElementById('html-player');
     const closeVideo = document.querySelector('.close-video');
     const videoTriggers = document.querySelectorAll('.video-trigger');
 
-    if(videoModal && youtubePlayer) {
+    if(videoModal && htmlPlayer) {
         videoTriggers.forEach(trigger => {
             trigger.addEventListener('click', (e) => {
                 e.preventDefault();
-                const videoId = trigger.closest('.video-trigger').getAttribute('data-video-id');
-                // Embed the YouTube video with autoplay. We use youtube-nocookie and add origin to prevent Error 153 when opening via file://
-                youtubePlayer.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&origin=${window.location.origin}`;
+                const videoUrl = trigger.closest('.video-trigger').getAttribute('data-video-url');
+                htmlPlayer.src = videoUrl;
                 videoModal.classList.add('active');
+                htmlPlayer.play().catch(e => console.log('Autoplay prevented:', e));
             });
         });
 
         const closePlayer = () => {
             videoModal.classList.remove('active');
-            youtubePlayer.src = ''; // Clear source to stop video
+            htmlPlayer.pause();
+            htmlPlayer.src = ''; // Clear source to stop video
         };
 
         closeVideo?.addEventListener('click', closePlayer);
@@ -216,5 +217,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 8. Project Tabs Switching
+    const tabBtns = document.querySelectorAll('.project-tab-btn');
+    const tabContents = document.querySelectorAll('.project-tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetTab = btn.getAttribute('data-tab');
+
+            // Update active button
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update active content panel (re-add class to retrigger animation)
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === `tab-${targetTab}`) {
+                    // Remove and re-add to retrigger CSS animation
+                    void content.offsetWidth;
+                    content.classList.add('active');
+                }
+            });
+        });
+    });
 
 });

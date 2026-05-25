@@ -45,6 +45,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#photography">Photography</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -68,6 +69,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#photography">Photography</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#" class="btn btn-outline" download>Resume</a></li>
@@ -206,57 +208,206 @@
                     <div class="section-line"></div>
                 </div>
 
-                <div class="projects-grid">
-                    <!-- Featured Project 1: Abroad Higher Study Solution -->
-                    <article class="project-card featured" data-reveal="up">
-                        <div class="project-image">
-                            <!-- YouTube Thumbnail for the first video using hqdefault instead of maxresdefault to prevent 404 image errors -->
-                            <img src="https://img.youtube.com/vi/AZMYS9K_QrM/hqdefault.jpg"
-                                alt="Abroad Higher Study Solution">
-                            <div class="project-overlay">
-                                <button class="icon-link video-trigger" data-video-id="AZMYS9K_QrM"
-                                    aria-label="Play video"><i class="fas fa-play"></i></button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-badges">
-                                <span class="badge">C#</span>
-                                <span class="badge">.NET</span>
-                                <span class="badge">Desktop App</span>
-                            </div>
-                            <h3 class="project-title">Abroad Higher Study Solution</h3>
-                            <p class="project-desc">A comprehensive platform designed to assist students with their
-                                higher education journey abroad, streamlining the application and decision-making
-                                process.</p>
-                        </div>
-                    </article>
-
-                    <!-- Featured Project 2: OpenGL Dhaka City -->
-                    <article class="project-card featured" data-reveal="up" data-delay="100">
-                        <div class="project-image">
-                            <!-- YouTube Thumbnail for the second video -->
-                            <img src="https://img.youtube.com/vi/RPxZ-WXIAAU/maxresdefault.jpg" alt="Dhaka City OpenGL">
-                            <div class="project-overlay">
-                                <button class="icon-link video-trigger" data-video-id="RPxZ-WXIAAU"
-                                    aria-label="Play video"><i class="fas fa-play"></i></button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-badges">
-                                <span class="badge">C++</span>
-                                <span class="badge">OpenGL</span>
-                                <span class="badge">GLUT</span>
-                                <span class="badge">Computer Graphics</span>
-                            </div>
-                            <h3 class="project-title">Hatirjheel Scenario of Dhaka City</h3>
-                            <p class="project-desc">A 3D computer graphics simulation using OpenGL and GLUT
-                                demonstrating four unique, interactive visual scenarios mapping dynamic elements of
-                                Dhaka city.</p>
-                        </div>
-                    </article>
-
-
+                <!-- Project Sub-Category Tabs -->
+                <div class="project-tabs">
+                    <button class="project-tab-btn active" data-tab="dev">
+                        <i class="fas fa-code"></i> Dev Projects
+                    </button>
+                    <button class="project-tab-btn" data-tab="aiml">
+                        <i class="fas fa-brain"></i> AI / ML Projects
+                    </button>
+                    <button class="project-tab-btn" data-tab="other">
+                        <i class="fas fa-layer-group"></i> Other Projects
+                    </button>
                 </div>
+
+                <!-- Dev Projects -->
+                <div class="project-tab-content active" id="tab-dev">
+                    <div class="projects-grid">
+                        <!-- Featured Project 1: Abroad Higher Study Solution -->
+                        <article class="project-card featured" data-reveal="up">
+                            <div class="project-image">
+                                <img src="https://res.cloudinary.com/djzinbjqk/video/upload/q_auto/f_auto/v1779722424/1750956377190_cyivtv.jpg"
+                                    alt="Abroad Higher Study Solution">
+                                <div class="project-overlay">
+                                    <button class="icon-link video-trigger" data-video-url="https://res.cloudinary.com/djzinbjqk/video/upload/q_auto/f_auto/v1779722424/1750956377190_cyivtv.mp4"
+                                        aria-label="Play video"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">C#</span>
+                                    <span class="badge">.NET</span>
+                                    <span class="badge">Desktop App</span>
+                                </div>
+                                <h3 class="project-title">Abroad Higher Study Solution</h3>
+                                <p class="project-desc">A comprehensive platform designed to assist students with their
+                                    higher education journey abroad, streamlining the application and decision-making
+                                    process.</p>
+                            </div>
+                        </article>
+
+                        <!-- Featured Project 2: OpenGL Dhaka City -->
+                        <article class="project-card featured" data-reveal="up" data-delay="100">
+                            <div class="project-image">
+                                <img src="https://res.cloudinary.com/djzinbjqk/video/upload/q_auto/f_auto/v1779722420/output_progressive_9b2c95de-59b4-4987-ae0a-b6f053d9c6ef_dx4db5.jpg" alt="Dhaka City OpenGL">
+                                <div class="project-overlay">
+                                    <button class="icon-link video-trigger" data-video-url="https://res.cloudinary.com/djzinbjqk/video/upload/q_auto/f_auto/v1779722420/output_progressive_9b2c95de-59b4-4987-ae0a-b6f053d9c6ef_dx4db5.mp4"
+                                        aria-label="Play video"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">C++</span>
+                                    <span class="badge">OpenGL</span>
+                                    <span class="badge">GLUT</span>
+                                    <span class="badge">Computer Graphics</span>
+                                </div>
+                                <h3 class="project-title">Hatirjheel Scenario of Dhaka City</h3>
+                                <p class="project-desc">A 3D computer graphics simulation using OpenGL and GLUT
+                                    demonstrating four unique, interactive visual scenarios mapping dynamic elements of
+                                    Dhaka city.</p>
+                            </div>
+                        </article>
+
+                       
+
+                        
+                    </div>
+                </div>
+
+                <!-- AI/ML Projects -->
+                <div class="project-tab-content" id="tab-aiml">
+                    <div class="projects-grid">
+                        <!-- AI/ML Dummy Project 1 -->
+                        <article class="project-card featured" data-reveal="up">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&auto=format&fit=crop" alt="Sentiment Analysis">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View notebook"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="icon-link" aria-label="View code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">PyTorch</span>
+                                    <span class="badge">Transformers</span>
+                                    <span class="badge">NLP</span>
+                                </div>
+                                <h3 class="project-title">Bangla Sentiment Analysis with BERT</h3>
+                                <p class="project-desc">Fine-tuned a multilingual BERT model on a custom Bangla Twitter dataset to classify sentiment with 89% accuracy, addressing the low-resource language challenge in NLP.</p>
+                            </div>
+                        </article>
+
+                        <!-- AI/ML Dummy Project 2 -->
+                        <article class="project-card featured" data-reveal="up" data-delay="100">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop" alt="Object Detection">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="icon-link" aria-label="View code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">YOLOv8</span>
+                                    <span class="badge">OpenCV</span>
+                                    <span class="badge">Computer Vision</span>
+                                </div>
+                                <h3 class="project-title">Real-Time Traffic Object Detection</h3>
+                                <p class="project-desc">Deployed a YOLOv8-based object detection pipeline on edge hardware for real-time traffic analysis, achieving 30 FPS inference with 92% mAP on a custom dataset.</p>
+                            </div>
+                        </article>
+
+                        <!-- AI/ML Dummy Project 3 -->
+                        <article class="project-card" data-reveal="up" data-delay="150">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" alt="Stock Prediction">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View notebook"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="icon-link" aria-label="View code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">LSTM</span>
+                                    <span class="badge">Pandas</span>
+                                    <span class="badge">Matplotlib</span>
+                                </div>
+                                <h3 class="project-title">Time-Series Stock Price Forecasting</h3>
+                                <p class="project-desc">Built an LSTM-based forecasting model trained on 5 years of NASDAQ stock data. Incorporated technical indicators as features, reducing RMSE by 22% over baseline ARIMA.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Other Projects -->
+                <div class="project-tab-content" id="tab-other">
+                    <div class="projects-grid">
+                        <!-- Other Dummy Project 1 -->
+                        <article class="project-card" data-reveal="up">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1737562737087-2c855e5a08ab?w=800&auto=format&fit=crop" alt="Photography Portfolio">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">CSS</span>
+                                    <span class="badge">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Photography Portfolio Website</h3>
+                                <p class="project-desc">A minimal, image-first portfolio website to showcase street and event photography with a masonry gallery, lightbox modal, and smooth scroll animations.</p>
+                            </div>
+                        </article>
+
+                        <!-- Other Dummy Project 2 -->
+                        <article class="project-card" data-reveal="up" data-delay="100">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&auto=format&fit=crop" alt="Study Planner">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="icon-link" aria-label="View code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">JavaScript</span>
+                                    <span class="badge">LocalStorage</span>
+                                    <span class="badge">PWA</span>
+                                </div>
+                                <h3 class="project-title">Student Study Planner App</h3>
+                                <p class="project-desc">A progressive web app for students to plan their daily study schedule, track goals, set Pomodoro timers, and visualize weekly progress through interactive charts.</p>
+                            </div>
+                        </article>
+
+                        <!-- Other Dummy Project 3 -->
+                        <article class="project-card" data-reveal="up" data-delay="200">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop" alt="Event Manager">
+                                <div class="project-overlay">
+                                    <a href="#" class="icon-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="icon-link" aria-label="View code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-badges">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">Flask</span>
+                                    <span class="badge">SQLite</span>
+                                </div>
+                                <h3 class="project-title">Club Event Manager</h3>
+                                <p class="project-desc">A web-based event registration and management system built for university clubs — includes attendee check-in via QR code, email notifications, and an admin dashboard.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -360,6 +511,59 @@
             </div>
         </section>
 
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <div class="section-header" data-reveal="up">
+                    <h2 class="section-title">Milestones & Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal="up">
+                        <div class="project-image">
+                            <img src="img/Achievement/wice_2026.jpg" alt="8th WICE 2026 Silver Medal">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Silver Medal, 8th WICE 2026</h3>
+                            <p class="project-desc">Won Silver Medal in the Project Display category at the 8th World Innovation Competition and Exhibition 2026 (WICE). Selected for the international round in Malaysia, organized by IYSA.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="300">
+                        <div class="project-image">
+                            <img src="img/Achievement/aiubpc phototour.jpg" alt="AIUBPC PhotoTour 2025">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">1st Place, AIUBPC PhotoTour2025</h3>
+                            <p class="project-desc">Secured both 1st and 2nd place in the intra-club photography contest.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-reveal="up" data-delay="200">
+                        <div class="project-image">
+                            <img src="img/Achievement/Phy 1.png" alt="Physics Poster Presentation">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Physics Poster Presentation</h3>
+                            <p class="project-desc">Top in section and selected to present in the central competition in 2023 at AIUB.</p>
+                        </div>
+                    </article>
+                    <article class="project-card" data-reveal="up" data-delay="100">
+                        <div class="project-image">
+                            <img src="img/Achievement/show the creativity.jpg" alt="Show the Creativity">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Show the Creativity Olympiad</h3>
+                            <p class="project-desc">Secured 3rd position in the "Show the Creativity Olympiad".</p>
+                        </div>
+                    </article>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Photography Portfolio Section -->
         <section id="photography" class="photography section bg-alt">
             <div class="container">
@@ -368,10 +572,11 @@
                     <div class="section-line"></div>
                     <p class="section-subtitle">A collection of my creative work in photography.</p>
                 </div>
-
+        
                 <div class="masonry-gallery" data-reveal="up" data-delay="100">
                     <div class="gallery-item">
-                        <img src="img/Photographs/Md. Saikot Hossain_FOGGY MORNING_MobilePhotography.jpg" alt="Foggy Morning Photo">
+                        <img src="img/Photographs/Md. Saikot Hossain_FOGGY MORNING_MobilePhotography.jpg"
+                            alt="Foggy Morning Photo">
                         <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         <div class="gallery-caption">Foggy Morning Commute</div>
                     </div>
@@ -452,56 +657,14 @@
                     </div>
                 </div>
             </div>
-
+        
             <!-- Lightbox Modal -->
             <div id="lightbox" class="lightbox">
                 <span class="close-lightbox">&times;</span>
                 <img class="lightbox-content" id="lightbox-img">
             </div>
         </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="achievements section">
-            <div class="container">
-                <div class="section-header" data-reveal="up">
-                    <h2 class="section-title">Milestones & Achievements</h2>
-                    <div class="section-line"></div>
-                </div>
-
-                <div class="projects-grid">
-                    <article class="project-card" data-reveal="up">
-                        <div class="project-image">
-                            <img src="img/Achievement/show the creativity.jpg" alt="Show the Creativity">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Show the Creativity Olympiad</h3>
-                            <p class="project-desc">Secured 3rd position in the "Show the Creativity Olympiad".</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-reveal="up" data-delay="100">
-                        <div class="project-image">
-                            <img src="img/Achievement/Phy 1.png" alt="Physics Poster Presentation">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Physics Poster Presentation</h3>
-                            <p class="project-desc">Top in section and selected to present in the central competition in 2023 at AIUB.</p>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-reveal="up" data-delay="200">
-                        <div class="project-image">
-                            <img src="img/Achievement/aiubpc phototour.jpg" alt="AIUBPC PhotoTour 2025">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">1st Place, AIUBPC PhotoTour2025</h3>
-                            <p class="project-desc">Secured both 1st and 2nd place in the intra-club photography contest.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Contact Section -->
         <section id="contact" class="contact section bg-alt">
             <div class="container">
@@ -529,13 +692,13 @@
                         </div>
 
                         <div class="social-links-grid">
-                            <a href="https://github.com/MrThalamus" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/md-saikot-hossain-b66237256/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/MrThalamus" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i><span class="social-name">GitHub</span></a>
+                            <a href="https://www.linkedin.com/in/md-saikot-hossain-b66237256/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i><span class="social-name">LinkedIn</span></a>
                             <a href="https://www.researchgate.net/profile/Md-Saikot-Hossain?ev=hdr_xprf" class="social-btn" aria-label="ResearchGate"><i
-                                    class="fas fa-graduation-cap"></i></a>
-                            <a href="https://codeforces.com/profile/MrThalamus" class="social-btn" aria-label="Codeforces"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="currentColor"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5H1.5C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-7.5c0-.828.672-1.5 1.5-1.5h3z"/></svg></a>
-                            <a href="https://www.instagram.com/floating_window_242?igsh=enEyZDl5OGN4ZWxm" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://x.com/saikot_242" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    class="fas fa-graduation-cap"></i><span class="social-name">ResearchGate</span></a>
+                            <a href="https://codeforces.com/profile/MrThalamus" class="social-btn" aria-label="Codeforces"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="currentColor"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5H1.5C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-7.5c0-.828.672-1.5 1.5-1.5h3z"/></svg><span class="social-name">Codeforces</span></a>
+                            <a href="https://www.instagram.com/floating_window_242?igsh=enEyZDl5OGN4ZWxm" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="social-name">Instagram</span></a>
+                            <a href="https://x.com/saikot_242" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i><span class="social-name">Twitter</span></a>
                         </div> 
                     </div>
 
@@ -578,9 +741,7 @@
     <div id="video-modal" class="video-modal">
         <span class="close-video">&times;</span>
         <div class="video-container">
-            <iframe id="youtube-player" src="" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <video id="html-player" src="" controls autoplay style="width: 100%; height: 100%; max-height: 80vh; background: #000;"></video>
         </div>
     </div>
 

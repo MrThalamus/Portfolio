@@ -365,6 +365,72 @@
     color: #fff;
 }
 
+/* Project Tabs */
+.project-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    padding: 0.4rem;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: var(--border-radius-lg);
+    border: 1.5px solid rgba(0, 243, 255, 0.5);
+    width: fit-content;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.15);
+}
+
+[data-theme="light"] .project-tabs {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 120, 200, 0.45);
+    box-shadow: 0 0 20px rgba(0, 120, 200, 0.12);
+}
+
+.project-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.5rem;
+    border-radius: var(--border-radius-md);
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    white-space: nowrap;
+}
+
+.project-tab-btn i {
+    font-size: 0.9rem;
+}
+
+.project-tab-btn:hover {
+    color: var(--text-primary);
+    background: rgba(0, 243, 255, 0.1);
+}
+
+.project-tab-btn.active {
+    background: var(--accent-gradient);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 243, 255, 0.25);
+}
+
+.project-tab-content {
+    display: none;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.project-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -865,9 +931,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     font-size: 1.2rem;
     color: var(--text-secondary);
     transition: all var(--transition-fast);
+}
+
+.social-name {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.5rem);
+    transform: translateX(-50%) translateY(-4px);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-size: 0.78rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: var(--shadow-sm);
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+    z-index: 1;
 }
 
 .social-btn:hover {
@@ -876,6 +963,17 @@
     border-color: transparent;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 243, 255, 0.2);
+}
+
+.social-btn:hover .social-name,
+.social-btn:focus-visible .social-name {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.social-btn:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
 }
 
 .submit-btn {
