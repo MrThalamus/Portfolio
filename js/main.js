@@ -242,4 +242,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 9. Photography Expand Option
+    const photographySection = document.getElementById('photography');
+    if (photographySection) {
+        const galleryItemsList = photographySection.querySelectorAll('.gallery-item');
+        const INITIAL_COUNT = 6;
+        
+        if (galleryItemsList.length > INITIAL_COUNT) {
+            // Hide items beyond INITIAL_COUNT
+            for (let i = INITIAL_COUNT; i < galleryItemsList.length; i++) {
+                galleryItemsList[i].classList.add('hidden');
+            }
+            
+            // Add "View More" button
+            const viewMoreBtn = document.createElement('button');
+            viewMoreBtn.className = 'btn btn-outline';
+            viewMoreBtn.style.margin = '2rem auto 0';
+            viewMoreBtn.style.display = 'block';
+            viewMoreBtn.textContent = 'View More Photographs';
+            
+            photographySection.querySelector('.container').appendChild(viewMoreBtn);
+            
+            viewMoreBtn.addEventListener('click', () => {
+                galleryItemsList.forEach(item => {
+                    item.classList.remove('hidden');
+                    // Retrigger animation if any
+                    item.style.animation = 'none';
+                    item.offsetHeight; /* trigger reflow */
+                    item.style.animation = null; 
+                });
+                viewMoreBtn.style.display = 'none';
+            });
+        }
+    }
+
 });
