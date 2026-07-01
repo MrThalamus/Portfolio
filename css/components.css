@@ -85,6 +85,29 @@
     border-color: transparent;
 }
 
+[data-theme="light"] .icon-btn {
+    background: #ffffff;
+    color: #111827;
+    border-color: rgba(59, 52, 139, 0.285);
+}
+
+[data-theme="light"] .icon-btn:hover {
+    background: #e5e7eb;
+    color: #111827;
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="light"] .btn-outline {
+    color: #111827;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .btn-outline:hover {
+    color: #0f172a;
+    border-color: #0f172a;
+    background: rgba(17, 24, 39, 0.05);
+}
+
 /* Badges */
 .badge {
     padding: 0.25rem 0.75rem;
